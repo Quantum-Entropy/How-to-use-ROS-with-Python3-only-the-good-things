@@ -31,3 +31,16 @@ $ virualenv venv --python=python3
 ```bash
 $ source ~/python3/venv3/bin/activate
 ```
+![Screenshot from 2020-03-17 20-10-27](https://user-images.githubusercontent.com/58138568/76897302-63a93d80-688b-11ea-8c84-0198f8b27072.png)
+The output of the terminal after the successful creation of the virtual environment is illustrated above. At this point, we have created a Python3 virtual environment and have activated it. <b>The commands for the steps 4 and 5 must be executed in the virtual environment</b>
+
+<p><b>Step 4: </b> Install the required libraries and dependencies of the Python3 for our project. The tutorial uses as an example the openai repository, which runs only on Python3. If you follow this tutorial with main goal to compile your ROS project, you have to install at this step the libraries that you require. The openai requirements are as follows.</p>
+```bash
+$ cd ~/python3/src
+$ git clone https://github.com/openai/baselines.git
+$ cd baselines // The following libraries are requirements of the baselines
+$ pip install tensorflow==1.15rc2 // It will take some time depending on your bandwidth
+$ pip install -e .
+$ pip install gym
+```
+The output of the terminal after the successful installation of the required libraries for our project is illustrated above. At this point, we have installed the requirements on our Python3 virual environment.
