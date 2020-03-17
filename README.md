@@ -48,3 +48,32 @@ $ pip install gym
 ![Screenshot from 2020-03-17 20-47-08](https://user-images.githubusercontent.com/58138568/76900075-96096980-6890-11ea-8107-54f9378b7ecf.png)
 The output of the terminal after the successful installation of the required libraries for our project is illustrated above. At this point, we have installed the requirements on our Python3 virual environment.
 
+
+<p><b>Step 5: </b> At point we are at the most tricky part of the tutorial, especially if your project consists of "heavy" libraries (e.g. MoveIT!). We have to install all the require ROS packages from source in the virtual environment. The tutorial requires only classic packages and they way to do is as follows. <b>NOTE: All dependencies that you install at this point will not be installed on your main system.</b></p>
+
+```bash
+$ cd ~/python3/src
+$ git clone https://github.com/ros/geometry
+$ git clone https://github.com/ros/geometry2
+```
+```bash
+$ pip install pyaml
+$ pip install rospy
+$ pip install empy
+```
+
+<p>After the successful installation, we need to compile and source the environment. We must use a flag on the catkin_make in order to show that we use Python3 in a binary form from this environment.</p>
+
+```bash
+$ cd ~/python3
+$ catkin_make_isolated -DPYTHON_EXECUTABLE:FILEPATH=/home/evan/python3/venv3/bin/python // Modify the path accordingly
+$ source ~/python3/devel/setup.bash
+```
+
+Once compiled and sourced, we have got everything that we need. We can start launching things depending on our preferences.
+
+<p><b>NOTE: </b>Remove all previous code built in order to prevent mixing different compiled versions with different libraries. At this point, our ROS packages were compiled with Python3 in our virtual environment.</p>
+
+
+
+
