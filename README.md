@@ -66,7 +66,7 @@ $ pip install empy
 
 ```bash
 $ cd ~/python3
-$ catkin_make_isolated -DPYTHON_EXECUTABLE:FILEPATH=/home/evan/python3/venv3/bin/python // Modify the path accordingly
+$ catkin_make -DPYTHON_EXECUTABLE:FILEPATH=/home/evan/python3/venv3/bin/python // Modify the path accordingly
 $ source ~/python3/devel/setup.bash
 ```
 
