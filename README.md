@@ -74,6 +74,10 @@ Once compiled and sourced, we have got everything that we need. We can start lau
 
 <p><b>NOTE: </b>Remove all previous code built in order to prevent mixing different compiled versions with different libraries. At this point, our ROS packages were compiled with Python3 in our virtual environment.</p>
 
-
+References:
+1) https://answers.ros.org/questions/
+2) http://wiki.ros.org/ROS/Tutorials
+3) https://stackoverflow.com/
+4) https://www.theconstructsim.com/
 
 
