@@ -72,7 +72,26 @@ $ source ~/python3/devel/setup.bash
 
 Once compiled and sourced, we have got everything that we need. We can start launching things depending on our preferences.
 
-<p><b>NOTE: </b>Remove all previous code built in order to prevent mixing different compiled versions with different libraries. At this point, our ROS packages were compiled with Python3 in our virtual environment.</p>
+<p><b>Step 6 (Optional): </b>This step shows you how to comiple our ROS package on a new terminal. NOTE->Remove all previous code built in order to prevent mixing different compiled versions with different libraries. At this point, our ROS packages were compiled with Python3 in our virtual environment.</p>
+
+<p><b>6.1: </b>Get the terminal ready and compile...</p>
+
+```bash
+$ source ~/python3/venv3/bin/activate
+$ source ~/python3/venv3/devel/setup.bash
+$ cd /home/evan/catkin_make //Modify the path accordingly.
+```
+
+<p><b>6.2: </b>Remove all previous code in order to avoid incompatibility issues.</p>
+
+```bash
+$ rm -rf build devel
+$ catkin_make -DPYTHON_EXECUTABLE:FILEPATH=/home/evan/python3/venv3/bin/python // Modify the path accordingly
+$ source ~/python3/devel/setup.bash
+```
+
+At this point, our ROS packages were compiled with Python3 and we get the same output as after the Step 5.
+<b>The end...</b>
 
 References:
 1) https://answers.ros.org/questions/
