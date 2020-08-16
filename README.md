@@ -1,4 +1,9 @@
 # How-to-use-ROS-with-Python3-only-the-good-things
+
+# UPDATE-16.08.2020 
+<p><strong>The repository is deprecated. Migrate to Noetic or even Foxy.</strong></p>
+<p>---------------------------------------------------------------------</p>
+
 <b>A tutorial for running Python3 in any ROS1 distribution.</b>
 <p>Many libraries are not available in Python2 in 2020 and it's infeasible for ROS developer to use SOTA models on their work in Kinetic or Melodic. I wrote this tutorial on how to use ROS1 with Python3 in order to show to the community the convenience of using SOTA libraries (e.g. OpenAI models) with older ROS distributions.</p>
 <h1>Let's start..!!</h1>
